@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm test",
+    "test": "jest",
     "build": "npx tsc --skipLibCheck",
     "start": "nodemon --watch 'src/' --exec 'ts-node src/server.ts' -e ts",
     "prepare": "husky install"
@@ -33,6 +33,8 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
     "husky": "^7.0.4",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.7.0"
   }
 }
