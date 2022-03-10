@@ -1,0 +1,38 @@
+{
+  "name": "simplicity-bank",
+  "version": "0.0.1",
+  "description": "Simplicity Bank",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm test",
+    "build": "npx tsc --skipLibCheck",
+    "start": "nodemon --watch 'src/' --exec 'ts-node src/server.ts' -e ts",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thf4/simplicity-bank.git"
+  },
+  "author": "Thales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thf4/simplicity-bank/issues"
+  },
+  "homepage": "https://github.com/thf4/simplicity-bank#readme",
+  "dependencies": {
+    "typescript": "^4.6.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1"
+  }
+}
