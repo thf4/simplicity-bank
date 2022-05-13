@@ -7,8 +7,11 @@
     "doc": "docs",
     "test": "test"
   },
+  "engines": {
+    "node": ">=0.10.3 <=16"
+  },
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "npx tsc --skipLibCheck",
     "start": "nodemon --watch 'src/' --exec 'ts-node src/server.ts' -e ts",
     "prepare": "husky install"
@@ -27,6 +30,7 @@
     "typescript": "^4.6.2"
   },
   "devDependencies": {
+    "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "eslint": "^8.10.0",
