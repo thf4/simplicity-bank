@@ -13,8 +13,7 @@
   "scripts": {
     "test": "jest --coverage",
     "build": "npx tsc --skipLibCheck",
-    "start": "nodemon --watch 'src/' --exec 'ts-node src/server.ts' -e ts",
-    "prepare": "husky install"
+    "start": "nodemon --watch 'src/' --exec 'ts-node src/server.ts' -e ts"
   },
   "repository": {
     "type": "git",
